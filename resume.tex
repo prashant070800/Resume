@@ -1,0 +1,137 @@
+%-------------------------
+% Resume in Latex
+% Author : Prashant Singh
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Prashant Singh} \\ \vspace{4pt}
+    \small +91-7318536221 $|$ \href{mailto:prashant070800@gmail.com}{\underline{prashant070800@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/prashant0607/}{\underline{linkedin.com/in/prashant0607}} $|$
+    \href{https://github.com/prashant070800}{\underline{github.com/prashant070800}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Institute of Engineering and Technology, Lucknow}{8.0 GPA}
+      {B.Tech in Electronics and Communication Engineering}{Aug 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Engineer}{JAXL}{Python, Django, C/C++, SQL, Linux}{Aug 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Architected and maintained scalable REST APIs using Django REST Framework, ensuring sub-second latency for high-concurrency workloads.}
+      \resumeItem{Optimized telecom integrations (\textbf{Twilio}, \textbf{Plivo}, \textbf{Exotel}), increasing call stability and reducing connection drop rates by \textbf{15\%}.}
+      \resumeItem{Engineered \textbf{multi-threaded} data processing components in C++ to handle real-time telecom data ingestion with high throughput.}
+      \resumeItem{Secured user authentication by implementing Twilio SMS-based OTP workflows with robust token validation.}
+      \resumeItem{Streamlined e-commerce workflows by integrating Shopify API with secure HMAC validation and optimizing SQL queries to improve response times by \textbf{20\%}.}
+    \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer}{Infosys}{Python, Flask, Angular, GCP, SQL}{Aug 2022 -- Aug 2024}
+    \resumeItemListStart
+        \resumeItem{Developed a high-performance \textbf{RAG API} using Flask and \textbf{Milvus vector database}, achieving sub-second document retrieval.}
+        \resumeItem{Optimized Large Language Model (LLM) data pipelines by implementing concurrent processing in Python, significantly reducing dataset loading times.}
+        \resumeItem{Built and deployed containerized solutions on \textbf{Linux-based GCP environments} for smart city infrastructure projects.}
+        \resumeItem{Designed modular Angular components and refined API communication layers to improve front-end responsiveness.}
+        \resumeItem{Refactored database schemas and tuned complex SQL queries to eliminate performance bottlenecks in production applications.}
+    \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer Intern}{Jaxl Innovations Private Limited}{Python, Django, C/C++, Apple Pay}{Apr 2022 -- Jul 2022}
+    \resumeItemListStart
+        \resumeItem{Implemented secure payment processing via Apple Pay, ensuring full compliance with \textbf{PCI-DSS} API workflows.}
+        \resumeItem{Enhanced administrative efficiency by customizing the Django admin interface and implementing indexed queries for faster data visualization.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Vargi-Bot} $|$ \emph{ROS, Python, C++, OpenCV, MQTT, Linux}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a 3D warehouse simulation using ROS and Gazebo, featuring a robotic arm controlled by \textbf{multi-threaded perception algorithms}.}
+            \resumeItem{Integrated OpenCV-based computer vision for real-time object classification, reducing sorting latency through optimized image processing.}
+            \resumeItem{Established a real-time monitoring system using \textbf{MQTT} to sync robotic telemetry with Google Sheets and automated email alerts.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks \& Tools}{: Django, Flask, Angular, SageMaker, Jupyter, ROS, Milvus, Docker} \\
+     \textbf{Concepts}{: Multi-threading, Synchronization, OS Concepts, Database Optimization, REST APIs, Vector Search, RAG} \\
+     \textbf{Platforms}{: Linux, GCP, Git}
+    }}
+ \end{itemize}
+
+\end{document}
